@@ -29,27 +29,27 @@
 	<table>
 		<tr>
 			<td class="stars">&#x2605;</td>
-			<td>make your process available on the web under an an open license (e.g. a web form where I can enter my home and work address and get an HTML list of supermarkets)<a class="footnote" href="#addendum1" title="view costs and benefits of 1 star geoprocess">1</a></td>
+			<td><strong>make your process available on the web under an an open license</strong> (e.g. a web form where I can enter my home and work address and get an HTML list of supermarkets)<a class="footnote" href="#addendum1" title="view costs and benefits of 1 star geoprocess">1</a></td>
 			<!--<td><a href="gtd-1.pdf" title="1 star Galway temperature data">example ...</a></td>-->
 		</tr>
 		<tr>
 			<td class="stars">&#x2605;&#x2605;</td>
-			<td>document your process (inputs, outputs, ...) on the web and make it usable as an API (e.g. a SOAP or RESTful service endpoint is described on an HTML page and the endpoint accepts a route in SHP format and returns an ordered text list of the supermarkets’ addresses)<a class="footnote" href="#addendum2" title="view costs and benefits of 2 star geoprocess">2</a></td>
+			<td><strong>document your process (inputs, outputs, ...) on the web and make it usable as an API</strong> (e.g. a SOAP or RESTful service endpoint is described on an HTML page and the endpoint accepts a route in XML format and returns an ordered text list of the supermarkets’ addresses)<a class="footnote" href="#addendum2" title="view costs and benefits of 2 star geoprocess">2</a></td>
 			<!--<td><a href="gtd-2.xls" title="2 star Galway temperature data">example ...</a></td>-->
 		</tr>
 		<tr>
 			<td class="stars">&#x2605;&#x2605;&#x2605;</td>
-			<td>the control interface uses an open standard and the process is described in machine-readable form (e.g. an OGC WPS process, or WSDL endpoint woth SensorML description, accepting a shape file as the route input and returning a shape file with supermarket locations)<a class="footnote" href="#addendum3" title="view costs and benefits of 3 star geoprocess">3</a></td>
+			<td><strong>the control interface uses an open standard and the process is described in machine-readable form</strong> (e.g. a WSDL endpoint with SensorML description, accepting proprietary XML as the route input and returning a shape file with supermarket locations)<a class="footnote" href="#addendum3" title="view costs and benefits of 3 star geoprocess">3</a></td>
 			<!--<td><a href="gtd-3.csv" title="3 star Galway temperature data">example ...</a></td>-->
 		</tr>
 		<tr>
 			<td class="stars">&#x2605;&#x2605;&#x2605;&#x2605;</td>
-			<td>process inputs and outputs use non-proprietary or open formats (e.g. an OGC WPS process accepting GML/GPX input and returning the locations as GeoJSON<a class="footnote" href="#addendum4" title="view costs and benefits of 4 star geoprocess">4</a></td>
+			<td><strong>process inputs and outputs use standardized, non-proprietary or open formats</strong> (e.g. an OGC WPS process accepting GML/GPX input and returning the locations as GeoJSON<a class="footnote" href="#addendum4" title="view costs and benefits of 4 star geoprocess">4</a></td>
 			<!--<td><a href="gtd-4.html" title="4 star Galway temperature data">example ...</a></td>-->
 		</tr>
 		<tr>
 			<td class="stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</td>
-			<td>All tools and algorithms to execute a geoprocess are available for re-use under an OSI-approved license (e.g. the source code of a geoprocess is published as GPLv3 and can be executed in an Open Source WPS such as PyWPS)<a class="footnote" href="#addendum5" title="view costs and benefits of 5 star geoprocess">5</a></td>
+			<td><strong>all tools and algorithms to execute a geoprocess are available</strong> for re-use under an OSI-approved license (e.g. the source code of a geoprocess is published as GPLv3 and can be executed in an Open Source WPS)<a class="footnote" href="#addendum5" title="view costs and benefits of 5 star geoprocess">5</a></td>
 			<!--<td><a href="gtd-5.html" title="5 star Galway temperature data">example ...</a></td>-->
 		</tr>
 	</table>
@@ -60,27 +60,25 @@
 
 	<div class="addendum" id="addendum1">
 		<div class="leftcol">
-			<h2>What are the costs &amp; benefits of <span class="stars-inline">&#x2605;</span> Web data?</h2>
+			<h2>What are the costs &amp; benefits of <span class="stars-inline">&#x2605;</span> web geoprocessing?</h2>
 			<p>As a consumer ...</p>
 			<ul class="check">
-				<li>&#10004; You can look at it.</li>
-				<li>&#10004; You can print it.</li>
-				<li>&#10004; You can store it locally (on your hard drive or on an USB stick).</li>
-				<li>&#10004; You can enter the data into any other system.</li>
-				<li>&#10004; You can change the data as you wish.</li>
-				<li>&#10004; You can share the data with anyone you like.</li>
+				<li>&#10004; You can use it.</li>
 			</ul>
 			<p>As a publisher ...</p>
 			<ul class="check">
 				<li>&#10004; It's simple to publish.</li>
-				<li>&#10004; You do not have explain repeatedly to others that they can use your data.</li>
+				<li>&#10004; You do not have to publish any of your internal resources.</li>
+				<li>&#10004; You do not have to specify the process formally.</li>
+				<li>&#10004; You do not have to solve the problem for specific customers ever again because the web process can by used by anyone.</li>
 			</ul>
 		</div>
 		<div class="rightcol">
 			<div class="squo">&ldquo;</div>
 			<p>
-				It's great to have the data accessible on the Web under an open license (such as <a href="http://www.opendatacommons.org/licenses/pddl/" title="Open Data Commons   &raquo; Public Domain Dedication and License (PDDL)">PDDL</a>, <a href="http://www.opendatacommons.org/licenses/by/" title="Open Data Commons   &raquo; Open Data Commons Attribution License">ODC-by</a> or <a href="http://creativecommons.org/publicdomain/zero/1.0/" title="Creative Commons &mdash;CC0 1.0 Universal">CC0</a>), however, the data is locked-up in a document.
-				Other than writing a custom scraper, it's hard to get the data out of the document.
+				It's great to ... <!-- have the data accessible on the Web under an open license (such as <a href="http://www.opendatacommons.org/licenses/pddl/" title="Open Data Commons   &raquo; Public Domain Dedication and License (PDDL)">PDDL</a>, <a href="http://www.opendatacommons.org/licenses/by/" title="Open Data Commons   &raquo; Open Data Commons Attribution License">ODC-by</a> or <a href="http://creativecommons.org/publicdomain/zero/1.0/" title="Creative Commons &mdash;CC0 1.0 Universal">CC0</a>), however, the data is locked-up in a document.
+				Other than writing a custom scraper, it's hard to get the data out of the document.-->
+				Other than writing a custom wrapper, it's hard to integrate the process into any workflows.
 			</p>
 			<div class="equo">&rdquo;</div>
 		</div>
@@ -89,22 +87,23 @@
 
 	<div class="addendum" id="addendum2">
 		<div class="leftcol">
-			<h2>What are the costs &amp; benefits of <span class="stars-inline">&#x2605;&#x2605;</span> Web data?</h2>
-			<p>As a consumer, you can do all what you can do with <span class="stars-inline">&#x2605;</span> Web data and additionally:</p>
+			<h2>What are the costs &amp; benefits of <span class="stars-inline">&#x2605;&#x2605;</span> web geoprocessing?</h2>
+			<p>As a consumer, you can do all what you can do with <span class="stars-inline">&#x2605;</span> web geoprocessing and additionally:</p>
 			<ul class="check">
-				<li>&#10004; You can directly process it with proprietary software to aggregate it, perform calculations, visualise it, etc.</li>
-				<li>&#10004; You can export it into another (structured) format.</li>
+				<li>&#10004; You can integrate a process with any software or workflow.</li>
+				<li>&#10004; You can utilize the process for your own data.</li>
 			</ul>
 			<p>As a publisher ...</p>
 			<ul class="check">
 				<li>&#10004; It's still simple to publish.</li>
+				<li>&#10004; You can take advantage of the public formats and interface in your own applications.</li>
+				<li>&#10004; You can control access to specific parts of your infrastructure transparently.</li>
 			</ul>
 		</div>
 		<div class="rightcol">
 			<div class="squo">&ldquo;</div>
 			<p>
-				Splendid! The data is accessible on the Web in a structured way (that is, machine-readable), however, the data is still locked-up in a document.
-				To get the data out of the document you depend on proprietary software.
+				Splendid! The process is accessible on the Web and can be used in workflows and applications by other people with their own data, however, specific implementations are required to to just that.				
 			</p>
 			<div class="equo">&rdquo;</div>
 		</div>
@@ -113,21 +112,22 @@
 
 	<div class="addendum" id="addendum3">
 		<div class="leftcol">
-			<h2>What are the costs &amp; benefits of <span class="stars-inline">&#x2605;&#x2605;&#x2605;</span> Web data?</h2>
-			<p>As a consumer, you can do all what you can do with <span class="stars-inline">&#x2605;&#x2605;</span> Web data and additionally:</p>
+			<h2>What are the costs &amp; benefits of <span class="stars-inline">&#x2605;&#x2605;&#x2605;</span> web geoprocessing?</h2>
+			<p>As a consumer, you can do all what you can do with <span class="stars-inline">&#x2605;&#x2605;</span> web geoprocessing and additionally:</p>
 			<ul class="check">
-				<li>&#10004; You can manipulate the data in any way you like, without being confined by the capabilities of any particular software.</li>
+				<li>&#10004; You can develop a complete client to the process for your application.</li>
 			</ul>
 			<p>As a publisher ...</p>
 			<ul class="check">
+				<!--
 				<li>&#9888; You might need converters or plug-ins to export the data from the proprietary format.</li>
-				<li>&#10004; It's still rather simple to publish.</li>
+				<li>&#10004; It's still rather simple to publish.</li>-->
 			</ul>
 		</div>
 		<div class="rightcol">
 			<div class="squo">&ldquo;</div>
 			<p>
-				Excellent! The data is not only available via the Web but now everyone can use the data easily.
+				Excellent! The process is available via the Web in a structured way (that is, machine-readable) and now everyone can use the data easily.
 				On the other hand, it's still data on the Web and not <a href="http://webofdata.wordpress.com/2010/03/01/data-and-the-web-choices/" title="Data and the Web &#8211; a great many of choices  &laquo;  Web of Data">data in the Web</a>.
 			</p>
 			<div class="equo">&rdquo;</div>
@@ -137,31 +137,31 @@
 
 	<div class="addendum" id="addendum4">
 		<div class="leftcol">
-			<h2>What are the costs &amp; benefits of <span class="stars-inline">&#x2605;&#x2605;&#x2605;&#x2605;</span> Web data?</h2>
-			<p>As a consumer, you can do all what you can do with <span class="stars-inline">&#x2605;&#x2605;&#x2605;</span> Web data and additionally:</p>
+			<h2>What are the costs &amp; benefits of <span class="stars-inline">&#x2605;&#x2605;&#x2605;&#x2605;</span> web geoprocessing?</h2>
+			<p>As a consumer, you can do all what you can do with <span class="stars-inline">&#x2605;&#x2605;&#x2605;</span> web geoprocessing and additionally:</p>
 			<ul class="check">
+				<!--
 				<li>&#10004; You can link to it from any other place (on the Web or locally).</li>
 				<li>&#10004; You can bookmark it.</li>
 				<li>&#10004; You can reuse parts of the data.</li>
 				<li>&#10004; You may be able to reuse existing tools and libraries, even if they only understand parts of the pattern the publisher used.</li>
 				<li>&#9888; Understanding the structure of an RDF "Graph" of data can be more effort than tabular (Excel/CSV) or tree (XML/JSON) data.</li>
-				<li>&#10004; You can combine the data safely with other data. URIs are a global scheme so if two things have the same URI then it's intentional, and if so that's well on it's way to being 5 star data!</li>
-
+				<li>&#10004; You can combine the data safely with other data. URIs are a global scheme so if two things have the same URI then it's intentional, and if so that's well on it's way to being 5 star data!</li>-->
 			</ul>
 			<p>As a publisher ...</p>
 			<ul class="check">
+				<!--
 				<li>&#10004; You have fine-granular control over the data items and can optimise their access (load balancing, caching, etc.)</li>
 				<li>&#10004; Other data publishers can now link into your data, promoting it to 5 star!</li>
 				<li>&#9888; You typically invest some time slicing and dicing your data.</li>
 				<li>&#9888; You'll need to assign URIs to data items and think about how to represent the data.</li>
-				<li>&#9888; You need to either find existing patterns to reuse or create your own.</li>
+				<li>&#9888; You need to either find existing patterns to reuse or create your own.</li>-->
 			</ul>
 		</div>
 		<div class="rightcol">
 			<div class="squo">&ldquo;</div>
 			<p>
-				Wonderful! Now it's data <strong>in</strong> the Web. The (most important) data items have a URI and can be shared on the Web.
-				A native way to represent the data is using RDF, however other formats such as Atom can be converted/mapped, if required.
+				Wonderful! Now it's a process <strong>in</strong> the web. The (most important) parts of the process have been documented and make it reusable.
 			</p>
 			<div class="equo">&rdquo;</div>
 		</div>
@@ -170,28 +170,30 @@
 
 	<div class="addendum" id="addendum5">
 		<div class="leftcol">
-			<h2>What are the costs &amp; benefits of <span class="stars-inline">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span> Web data?</h2>
-			<p>As a consumer, you can do all what you can do with <span class="stars-inline">&#x2605;&#x2605;&#x2605;&#x2605;</span> Web data and additionally:</p>
+			<h2>What are the costs &amp; benefits of <span class="stars-inline">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span> web geoprocessing?</h2>
+			<p>As a consumer, you can do all what you can do with <span class="stars-inline">&#x2605;&#x2605;&#x2605;&#x2605;</span> web geoprocessing and additionally:</p>
 			<ul class="check">
-				<li>&#10004; You can discover more (related) data while consuming the data.</li>
-				<li>&#10004; You can directly learn about the data schema.</li>
-				<li>&#9888; You now have to deal with broken data links, just like 404 errors in web pages.</li>
-				<li>&#9888; Presenting data from an arbitrary link as fact is as risky as letting people include content from any website in your pages. Caution, trust and common sense are all still necessary.</li>
+				<li>&#10004; You can manipulate the geoprocess in any way you like, without being confined by the capabilities of any particular software.</li>
+				<li>&#10004; You can directly learn about the logic of a process.</li>
+				<li>&#9888; You can deploy your own instance of the (changed) geoprocess.</li>
 			</ul>
 			<p>As a publisher ...</p>
 			<ul class="check">
-				<li>&#10004; You make your data discoverable.</li>
+				<!--<li>&#10004; You make your data discoverable.</li>
 				<li>&#10004; You increase the value of your data.</li>
 				<li>&#10004; You own organisation will gain the same benefits from the links as the consumers.</li>
 				<li>&#9888; You'll need to invest resources to link your data to other data on the Web.</li>
-				<li>&#9888; You may need to repair broken or incorrect links.</li>
+				<li>&#10004; You can store it locally (on your hard drive or on an USB stick).</li>
+				<li>&#10004; You can enter the data into any other system.</li>
+				<li>&#10004; You can change the data as you wish.</li>-->
+				<li>&#10004; You can share the process with anyone you like.</li>
+				<li>&#9888; You may need to invest resources to maintain a reliable service instance.</li>
 			</ul>
 		</div>
 		<div class="rightcol">
 			<div class="squo">&ldquo;</div>
 			<p>
-				Brilliant! Now it's data, <strong>in</strong> the Web <strong>linked to</strong> other data. Both the consumer and the publisher
-				benefit from the <a href="http://en.wikipedia.org/wiki/Network_effect" title="Network effect - Wikipedia, the free encyclopedia">network effect</a>.
+				Brilliant! Now it's a geoprocess, <strong>in</strong> the Web that can be <strong>integrated with other geoprocesses</strong> into workflows. Both the consumer and the publisher benefit from the <a href="http://en.wikipedia.org/wiki/Network_effect" title="Network effect - Wikipedia, the free encyclopedia">network effect</a>.
 			</p>
 			<div class="equo">&rdquo;</div>
 		</div>
