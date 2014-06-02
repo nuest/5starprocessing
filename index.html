@@ -11,44 +11,46 @@
 	<h1>5 &#x2605; Open Geoprocessing</h1>
 
 	<p id="about" class="narrow">
-		<a href="http://www.w3.org/People/Berners-Lee/card#i">Tim Berners-Lee</a>, the inventor of the Web and Linked Data initiator, suggested a <a href="http://www.w3.org/DesignIssues/LinkedData.html">5 star deployment scheme</a> for Open Data. Here, we give examples for each step of the stars and explain costs and benefits that come along with it.
+		<a href="http://www.w3.org/People/Berners-Lee/card#i">Tim Berners-Lee</a>, the inventor of the Web and Linked Data initiator, suggested a <a href="http://www.w3.org/DesignIssues/LinkedData.html">5 star deployment scheme</a> for Open Data. These simple classification scheme was a great success for the Linked Open Data (LOD) movement because it established common terms and makes the concepts and goals easily accessible. Here, we try to transfer this success to the domain of geospatial processes in the web. We give examples for each step of the stars and explain costs and benefits that come along with it.
 	</p>
+	<!--
 	<div class="img-container">
 		<img src="5star-steps.png" alt="5-star steps by example" />
 	</div>
-
+	-->
+	
 	<div class="sep"></div>
 
 	<h2 id="by-example">By Example ...</h2>
 	<p>
-		Below, we provide examples for each level of Tim's 5 star Open Data plan. The example data used throughout is '<em>the temperature forecast for Galway, Ireland for the next 3 days</em>':
+		Below, we provide examples for each level of the 5 star Open Geoprocess plan. The example process used throughout is '<em>the supermarkets on my way home</em>', or more technically the 100m buffer around my route from work to home that is intersected with a retail dataset of supermarkets:
 	</p>
 
 	<table>
 		<tr>
 			<td class="stars">&#x2605;</td>
-			<td>make your stuff available on the Web (whatever format) under an open license<a class="footnote" href="#addendum1" title="view costs and benefits of 1 star data">1</a></td>
-			<td><a href="gtd-1.pdf" title="1 star Galway temperature data">example ...</a></td>
+			<td>make your process available on the web under an an open license (e.g. a web form where I can enter my home and work address and get an HTML list of supermarkets)<a class="footnote" href="#addendum1" title="view costs and benefits of 1 star geoprocess">1</a></td>
+			<!--<td><a href="gtd-1.pdf" title="1 star Galway temperature data">example ...</a></td>-->
 		</tr>
 		<tr>
 			<td class="stars">&#x2605;&#x2605;</td>
-			<td>make it available as structured data (e.g., Excel instead of image scan of a table)<a class="footnote" href="#addendum2" title="view costs and benefits of 2 star data">2</a></td>
-			<td><a href="gtd-2.xls" title="2 star Galway temperature data">example ...</a></td>
+			<td>document your process (inputs, outputs, ...) on the web and make it usable as an API (e.g. a SOAP or RESTful service endpoint is described on an HTML page and the endpoint accepts a route in SHP format and returns an ordered text list of the supermarkets’ addresses)<a class="footnote" href="#addendum2" title="view costs and benefits of 2 star geoprocess">2</a></td>
+			<!--<td><a href="gtd-2.xls" title="2 star Galway temperature data">example ...</a></td>-->
 		</tr>
 		<tr>
 			<td class="stars">&#x2605;&#x2605;&#x2605;</td>
-			<td>use non-proprietary formats (e.g., CSV instead of Excel)<a class="footnote" href="#addendum3" title="view costs and benefits of 3 star data">3</a></td>
-			<td><a href="gtd-3.csv" title="3 star Galway temperature data">example ...</a></td>
+			<td>the control interface uses an open standard and the process is described in machine-readable form (e.g. an OGC WPS process, or WSDL endpoint woth SensorML description, accepting a shape file as the route input and returning a shape file with supermarket locations)<a class="footnote" href="#addendum3" title="view costs and benefits of 3 star geoprocess">3</a></td>
+			<!--<td><a href="gtd-3.csv" title="3 star Galway temperature data">example ...</a></td>-->
 		</tr>
 		<tr>
 			<td class="stars">&#x2605;&#x2605;&#x2605;&#x2605;</td>
-			<td>use URIs to denote things, so that people can point at your stuff<a class="footnote" href="#addendum4" title="view costs and benefits of 4 star data">4</a></td>
-			<td><a href="gtd-4.html" title="4 star Galway temperature data">example ...</a></td>
+			<td>process inputs and outputs use non-proprietary or open formats (e.g. an OGC WPS process accepting GML/GPX input and returning the locations as GeoJSON<a class="footnote" href="#addendum4" title="view costs and benefits of 4 star geoprocess">4</a></td>
+			<!--<td><a href="gtd-4.html" title="4 star Galway temperature data">example ...</a></td>-->
 		</tr>
 		<tr>
 			<td class="stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</td>
-			<td>link your data to other data to provide context<a class="footnote" href="#addendum5" title="view costs and benefits of 5 star data">5</a></td>
-			<td><a href="gtd-5.html" title="5 star Galway temperature data">example ...</a></td>
+			<td>All tools and algorithms to execute a geoprocess are available for re-use under an OSI-approved license (e.g. the source code of a geoprocess is published as GPLv3 and can be executed in an Open Source WPS such as PyWPS)<a class="footnote" href="#addendum5" title="view costs and benefits of 5 star geoprocess">5</a></td>
+			<!--<td><a href="gtd-5.html" title="5 star Galway temperature data">example ...</a></td>-->
 		</tr>
 	</table>
 
@@ -201,22 +203,16 @@
 	<h2 id="see-also">See Also</h2>
 	<ul>
 		<li>
-			<a href="http://inkdroid.org/ehs">Ed Summers</a> has provided a <a href="http://inkdroid.org/journal/2010/06/04/the-5-stars-of-open-linked-data/" title="the 5 stars of open linked data">nice rendering</a> of the 5 star scheme that we're building upon here.
+			<a href="http://nordholmen.net">Daniel Nüst</a> presented the idea of 5 Star Open Geoprocessing first in 2014 at the <a href="http://www.agile-online.org/">AGILE</a> &amp; <a href="#">EuroSDR</a> workshop "Geoprocessing on the Web". Take a look at the <a href="#">presentation</a> and <a href="#">abstract</a>.
 		</li>
-		<li>If you have Open Data, you might want to use the <a href="http://lab.linkeddata.deri.ie/2010/lod-badges/">star badges</a> to flag your compliance level.</li>
-		<li><a href="http://jayg.org/">James G. Kim</a> provided a <a href="http://5stardata.info/kr/" title="별점 5 오픈 데이터">Korean translation</a> of this site.</li>
-                <li>Christopher Gutteridge has a <a href='http://openorg.ecs.soton.ac.uk/wiki/Linked_Data_Basics_for_Techies'>Linked Data crash course for programmers</a>.</li>
-                <li>The <a href='http://theodi.org'>Open Data Institute</a> helps you certify your open data with the <a href='https://certificates.theodi.org'>open data certificate</a>.</li>
 	</ul>
 
 	<div id="ack">
+		<!--
 		<p>
-			Kudos to <a href="http://twitter.com/andyseaborne">Andy Seaborne</a> for pointing out the CSV bug,
-		to <a href="http://twitter.com/kerfors">Kerstin Forsberg</a> for suggesting the 'data highlighting' in the 4/5 star examples,
-		as well as to <a href="http://twitter.com/vassilios">Vassilios Peristeras</a> for proposing to explain not only
-		the 'what' but also the 'why'. Thanks to <a href="https://twitter.com/egonwillighagen">Egon Willighagen</a> for providing more details about benefits of one-star data. Additional contributions from <a href='http://id.ecs.soton.ac.uk/person/1248'>Christopher Gutteridge</a>.
-		This site is brought to you by the EC FP7 Support Action LOD-Around-The-Clock (<a href="http://latc-project.eu/">LATC</a>).
+			Kudos to ...
 		</p>
+		-->
 	</div>
 	<div id="footer">
 		<span>
