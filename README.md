@@ -4,6 +4,8 @@ Website with information for open processing in the web at 5starprocessing.info,
 
 Both the idea and the technical infrastructure were heavily inspired by the project http://5stardata.info by Michael Hausenblas (http://mhausenblas.info). And as he puts it: All stuff here in the Public Domain, as usual ;).
 
+The contents of this repository are published under CC0 "Public Domain Dedication" license: http://creativecommons.org/publicdomain/zero/1.0/
+
 ## Contribute
 
 Join the discussion by opening an issue or leaving a comment at an existing issue.
