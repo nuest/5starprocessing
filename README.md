@@ -15,6 +15,8 @@ Translations are always welcome - get in touch with Daniel (d.nuest@52north.org)
 ## Tasks
 
 * [ ] add nice image depicting the stars, with steps in a starcaise (see original 5 star data page)
+  * [ ] logo for five stars: an extension of the OSI logo (keyhole, http://opensource.org/files/garland_logo.png) which uses a gear
+* [ ] add working examples for the process, potentially as mock-ups
 * ideas based on the "see also" section of 5 star open data
   * [ ] star badges similar to http://lab.linkeddata.deri.ie/2010/lod-badges/ to show compliance level
   * translations - add your wish here
